@@ -1,0 +1,92 @@
+export let cards = [
+  {
+    imgUrl: "/images/react/react-crypto.jpg",
+    title: "Crypto App",
+    category: "react",
+    visit: "https://lucky-conkies-2f26aa.netlify.app/",
+  },
+  {
+    imgUrl: "/images/react/react-lyrics.jpg",
+    title: "Lyrics App",
+    category: "react",
+    visit: "https://frabjous-sprinkles-5a5d07.netlify.app/",
+  },
+  {
+    imgUrl: "/images/react/react-wesite.jpg",
+    title: "React single page website",
+    category: "react",
+    visit: "https://dapper-narwhal-e9441c.netlify.app/",
+  },
+  {
+    imgUrl: "/images/react/react-youtube.jpg",
+    title: "React youtube",
+    category: "react",
+    visit: "https://precious-genie-8fe71d.netlify.app/",
+  },
+  {
+    imgUrl: "/images/js/alarm.jpg",
+    title: "Alarm ",
+    category: "js",
+    visit: "https://phenomenal-crisp-1a8654.netlify.app/alarm/",
+  },
+  {
+    imgUrl: "/images/js/photo_editor.jpg",
+    title: "Online Photo Editor ",
+    category: "js",
+    visit: "https://phenomenal-crisp-1a8654.netlify.app/photo_editor/",
+  },
+  {
+    imgUrl: "/images/css/stack.jpg",
+    title: "boxes stack ",
+    category: "css",
+    visit: "https://rad-croissant-10a4e9.netlify.app/box_stack/",
+  },
+  {
+    imgUrl: "/images/css/clip_image.jpg",
+    title: "Clip path ",
+    category: "css",
+    visit: "https://rad-croissant-10a4e9.netlify.app/css/circleborder.html",
+  },
+  {
+    imgUrl: "/images/css/lights.jpg",
+    title: "Serial Lights",
+    category: "css",
+    visit: "https://rad-croissant-10a4e9.netlify.app/css/seriallight.html",
+  },
+  {
+    imgUrl: "/images/css/icons.jpg",
+    title: "Icons Animation",
+    category: "css",
+    visit: "https://rad-croissant-10a4e9.netlify.app/icon_hover/index.html",
+  },
+  {
+    imgUrl: "/images/css/illusion.jpg",
+    title: "Strobe",
+    category: "css",
+    visit: "https://rad-croissant-10a4e9.netlify.app/css/strobe.html",
+  },
+  {
+    imgUrl: "/images/js/todo.jpg",
+    title: "CRUD TODO",
+    category: "js",
+    visit: "https://phenomenal-crisp-1a8654.netlify.app/crud_todo/",
+  },
+  {
+    imgUrl: "/images/js/file_download.jpg",
+    title: "File Download",
+    category: "js",
+    visit: "https://phenomenal-crisp-1a8654.netlify.app/file_download/",
+  },
+  {
+    imgUrl: "/images/js/qr-scanner.jpg",
+    title: "Qr Scanner",
+    category: "js",
+    visit: "https://phenomenal-crisp-1a8654.netlify.app/qrscanner/",
+  },
+  {
+    imgUrl: "/images/js/password.jpg",
+    title: "Password Validation",
+    category: "js",
+    visit: "https://phenomenal-crisp-1a8654.netlify.app/password/",
+  },
+];

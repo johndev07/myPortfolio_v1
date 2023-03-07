@@ -1,0 +1,150 @@
+.mainContent {
+  width: 100%;
+  /* background-image: linear-gradient(
+      rgba(17, 20, 24, 0.8),
+      rgba(17, 20, 24, 0.8)
+    ),
+    url("../public/images/intro-bg.jpg");
+  background-size: cover; */
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 35px;
+}
+
+.mainContent h1 {
+  position: relative;
+}
+
+.mainContent h1::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 3px;
+  height: 80%;
+  top: 7px;
+  background-color: #fff;
+  animation: blink 0.2s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateZ(-10px) scale(2);
+  -webkit-transform: translateZ(-10px) scale(2);
+} */
+
+.mainContent::before {
+  background-image: linear-gradient(
+      rgba(17, 20, 24, 0.8),
+      rgba(17, 20, 24, 0.8)
+    ),
+    url("../public/images/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: -8px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  content: "";
+  transform: translateZ(-10px) scale(2);
+  -webkit-transform: translateZ(-10px) scale(2);
+}
+
+.mainContent h3 {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.mainContent h1 {
+  font-weight: 600;
+  font-size: calc(1.525rem + 3.3vw);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.mainContent p {
+  color: #dee3e4;
+  font-size: 1.3125rem;
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.hireMe {
+  padding: 0.8rem 2.6rem;
+  font-weight: bold;
+  border-width: 2px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 0.5rem;
+  border: 2px solid #00fffa;
+  border-radius: 25px;
+  color: #00fffa;
+
+  cursor: pointer;
+}
+
+.hireMe:hover {
+  background-color: #00fffa;
+  color: #000;
+}
+
+.scrollBtn {
+  position: absolute;
+  z-index: 3;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  animation: scrolldown 1.3s ease-out infinite;
+  cursor: pointer;
+}
+
+@keyframes scrolldown {
+  0% {
+    bottom: 45px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .hamburger {
+    display: none;
+  }
+}

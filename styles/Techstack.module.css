@@ -1,0 +1,103 @@
+.techstack {
+  background: #212529;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.techstack h3 {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 45px;
+  justify-content: center;
+  line-height: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.techstack h3:before {
+  position: absolute;
+  width: 100%;
+  content: "TECHNOLOGY";
+  color: #6c757d;
+  left: 50%;
+  top: 50%;
+  opacity: 0.1;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  font-size: calc(1.95rem + 8.4vw);
+}
+
+.techstack h3:after {
+  content: "";
+  width: 15%;
+  position: absolute;
+  height: 3px;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #00fffa;
+}
+
+.techlist {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.techlist div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  padding: 45px 0;
+  background: rgb(87, 87, 87);
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.techlist > div:hover {
+  /* box-shadow: 0 0 14px 0 #00e7ff; */
+  background-color: #111418;
+  color: #00fffa;
+  scale: 1.2;
+  transition: scale 0.5s;
+  z-index: 2;
+}
+
+.techlist div h5 {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.techlist > div:hover > svg {
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    /* opacity: 0; */
+
+    rotate: 0;
+  }
+  50% {
+    /* opacity: 100%; */
+  }
+  60% {
+    /* opacity: 100%; */
+  }
+
+  100% {
+    rotate: 360deg;
+    /* opacity: 0; */
+  }
+}

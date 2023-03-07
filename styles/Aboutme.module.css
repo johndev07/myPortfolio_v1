@@ -1,0 +1,128 @@
+.aboutSection {
+  min-height: 100vh;
+  background-color: #212529;
+  z-index: 1;
+}
+
+.heading h3 {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 45px;
+  line-height: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.heading h3:before {
+  position: absolute;
+  width: 100%;
+  content: "ABOUT ME";
+  color: #6c757d;
+  left: 50%;
+  top: 50%;
+  opacity: 0.1;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  font-size: calc(1.95rem + 8.4vw);
+}
+
+.heading h3:after {
+  content: "";
+  width: 15%;
+  position: absolute;
+  height: 3px;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #00fffa;
+}
+
+.aboutmePara {
+  width: 70%;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 35px;
+}
+
+.aboutmePara h3 span {
+  color: #00fffa;
+}
+
+.aboutmePara p {
+  line-height: 25px;
+}
+
+.aboutList {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutList ul {
+  padding-left: 0;
+  width: 80%;
+}
+
+.aboutList ul li {
+  list-style-type: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  border-bottom: 2px solid #5a5a5a;
+}
+
+.aboutList ul li span {
+  color: #00fffa;
+}
+
+.aboutList button {
+  padding: 15px 25px;
+  margin-top: 10px;
+  position: relative;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  font-weight: bold;
+  color: #9a9797;
+  border-radius: 25px;
+  background: #363636;
+  box-shadow: 2px 2px 4px #000000, inset 2px 2px 4px #252323,
+    inset -2px -2px 4px #646464, -2px -2px 6px #474747;
+  cursor: pointer;
+}
+
+.aboutList button svg {
+  font-size: 20px;
+}
+
+.counter {
+  width: 100%;
+}
+
+.counter div span {
+  display: block;
+}
+
+.counter div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  padding-right: 28px;
+  border-right: 2px solid #5a5a5a;
+  margin-top: 25px;
+}
+
+.counter div span {
+  font-weight: bold;
+}
+
+.counter div {
+  font-size: 1.425rem;
+  flex: 1 1;
+}

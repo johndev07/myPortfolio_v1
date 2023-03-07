@@ -1,0 +1,116 @@
+.sidebar {
+  flex: 3;
+  height: 100vh;
+  background-color: var(--bgcolorDark);
+  padding-top: 50px;
+  position: sticky;
+  top: 0;
+}
+
+.close {
+  color: #fff;
+  font-size: 35px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+  z-index: 5;
+}
+
+.sidebar h3 {
+  color: var(--textcolorWhite);
+}
+
+.imgContainer {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid #343a40;
+}
+
+.imgContainer img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.sidebar ul {
+  padding-left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar ul li {
+  color: var(--textcolorWhite);
+  cursor: pointer;
+  list-style-type: none;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar ul li:hover {
+  color: #00fffa;
+}
+
+.socialMedia {
+  margin-bottom: 25px;
+}
+
+.socialMedia span {
+  padding: 3px;
+  color: #aab1b8;
+  cursor: pointer;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.socialMedia span i {
+  font-size: 25px;
+}
+
+.socialMedia span:nth-child(1):hover {
+  color: #3b5998;
+  box-shadow: 0 0 3px 0 #3b5998;
+}
+.socialMedia span:nth-child(2):hover {
+  color: #00acee;
+  box-shadow: 0 0 3px 0 #00acee;
+}
+.socialMedia span:nth-child(3):hover {
+  color: #25d366;
+  box-shadow: 0 0 3px 0 #25d366;
+}
+.socialMedia span:nth-child(4):hover {
+  color: #deee00;
+  box-shadow: 0 0 3px 0 #deee00;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sidebar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .close {
+    display: block;
+  }
+
+  .active {
+    transition: all 0.3s ease-in-out;
+    left: 0;
+  }
+}
