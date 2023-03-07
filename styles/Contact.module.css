@@ -1,0 +1,107 @@
+.contactSection {
+  min-height: 100vh;
+  background-color: var(--bgcolorDark);
+  position: relative;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+.heading h3 {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 45px;
+  line-height: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.heading h3:before {
+  position: absolute;
+  width: 100%;
+  content: "CONTACT ME";
+  color: #6c757d;
+  left: 50%;
+  top: 50%;
+  opacity: 0.1;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  font-size: calc(1.95rem + 8.4vw);
+}
+
+.heading h3:after {
+  content: "";
+  width: 15%;
+  position: absolute;
+  height: 3px;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #00fffa;
+}
+
+.mainContainer {
+  display: flex;
+}
+
+.contactContainer {
+  flex: 1;
+}
+
+.contactForm {
+  margin-top: 40px;
+  border-radius: 25px;
+  padding: 60px 25px;
+  background-color: #ffffff2e;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 70%;
+  position: relative;
+  z-index: 10;
+  margin: auto;
+}
+
+.contactForm input {
+  height: 35px;
+  background-color: #ffffff2e;
+  color: #fff;
+  padding: 7px;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+.contactForm input:-ms-input-placeholder,
+.contactForm textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+.contactForm input[type="submit"] {
+  width: 80px;
+  border: none;
+}
+
+.contactForm textarea {
+  padding: 7px;
+  background-color: #ffffff2e;
+  color: #fff;
+}
+
+.contactCanvas {
+  flex: 1;
+}

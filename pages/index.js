@@ -6,9 +6,10 @@ import Aboutme from "../components/Aboutme";
 import Sidebar from "../components/Sidebar";
 import Portfolio from "../components/Portfolio";
 import Techstack from "../components/Techstack";
-
+import Mainintrotest from "../components/Mainintrotest";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Contact from "../components/Contact";
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -22,10 +23,12 @@ export default function Home() {
         <Stack direction="row">
           <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
           <Stack className={styles.sectionList}>
-            <Mainintro setIsOpen={setIsOpen} />
+            <Mainintrotest />
+            {/* <Mainintro setIsOpen={setIsOpen} /> */}
             <Aboutme />
             <Portfolio />
             <Techstack />
+            <Contact />
           </Stack>
         </Stack>
       </div>
