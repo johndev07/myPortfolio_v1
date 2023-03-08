@@ -2,7 +2,8 @@ import React from "react";
 import { Stack } from "@mui/material";
 import styles from "../styles/Mainintrotest.module.css";
 import ComputerCanvas from "./canvas/ComputerCanvas";
-const Mainintro = () => {
+import { GiHamburgerMenu } from "react-icons/gi";
+const Mainintro = ({ setIsOpen }) => {
   return (
     <Stack
       id="Home"
@@ -10,6 +11,10 @@ const Mainintro = () => {
       justifyContent="center"
       alignItems="center"
     >
+      <GiHamburgerMenu
+        className={styles.hamburger}
+        onClick={() => setIsOpen((open) => !open)}
+      />
       <div className={styles.heading}>
         <h2 data-aos="fade-up" data-aos-delay="200">
           Hi I&apos;m <span>ALWYN JOHN</span>

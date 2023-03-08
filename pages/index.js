@@ -16,14 +16,14 @@ export default function Home() {
   }, []);
 
   const [isOpen, setIsOpen] = useState(false);
-
+  console.log(isOpen);
   return (
     <>
       <div className={styles.container}>
         <Stack direction="row">
           <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
           <Stack className={styles.sectionList}>
-            <Mainintrotest />
+            <Mainintrotest setIsOpen={setIsOpen} />
             {/* <Mainintro setIsOpen={setIsOpen} /> */}
             <Aboutme />
             <Portfolio />

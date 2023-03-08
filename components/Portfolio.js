@@ -17,9 +17,8 @@ function Portfolio() {
         : cards.filter((data) => {
             return data.category === category;
           });
-    console.log(pathname === "/");
     let limitData = pathname === "/" ? filteredData.slice(0, 6) : filteredData;
-    console.log(limitData);
+
     setPortfolioData(limitData);
   }
   function sortHandler(e) {

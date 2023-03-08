@@ -1,16 +1,18 @@
 import React, { useEffect } from "react";
-import { Stack } from "@mui/material";
+import { Stack, useMediaQuery } from "@mui/material";
 import styles from "../styles/Aboutme.module.css";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import CountUp from "react-countup";
 const Aboutme = () => {
+  const isSmallScreen = useMediaQuery("(max-width:768px)");
+
   return (
     <Stack className={styles.aboutSection} id="MyAbout">
       <Stack className={styles.heading}>
         <h3 data-aos="fade-up">Know Me More</h3>
       </Stack>
       <Stack>
-        <Stack direction="row">
+        <Stack direction={isSmallScreen ? "column" : "row"}>
           <Stack className={styles.aboutmePara}>
             <h3 data-aos="fade-left">
               I&apos;m <span>Alwyn john samuel</span>, a Web Developer
@@ -51,7 +53,7 @@ const Aboutme = () => {
         </Stack>
       </Stack>
       <Stack
-        direction="row"
+        direction={isSmallScreen ? "column" : "row"}
         className={styles.counter}
         justifyContent="space-evenly"
       >
