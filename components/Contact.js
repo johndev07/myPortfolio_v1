@@ -5,7 +5,7 @@ import EarthCanvas from "./canvas/EarthCanvas";
 import StarCanvas from "./canvas/StarCanvas";
 const Contact = () => {
   return (
-    <Stack className={styles.contactSection} id="#contact">
+    <Stack className={styles.contactSection} id="contact">
       <div className={styles.main}>
         <Stack className={styles.heading}>
           <h3 data-aos="fade-up">Get In Touch</h3>

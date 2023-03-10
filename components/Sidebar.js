@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Stack } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import {
   AiOutlineTwitter,
   AiFillGithub,
@@ -11,6 +12,19 @@ import {
 import styles from "../styles/sidebar.module.css";
 import { TiSocialFacebook } from "react-icons/ti";
 const Sidebar = ({ isOpen, setIsOpen }) => {
+  const router = useRouter();
+  const { pathname } = router;
+  function sidebarHandler() {
+    setIsOpen((open) => !open);
+    if (pathname === "/works") {
+      router.push("/");
+    }
+    console.log(pathname);
+    if (pathname === "/") {
+      window.scrollTo(0, 0);
+    }
+  }
+
   return (
     <Stack
       className={`${styles.sidebar} ${isOpen ? styles.active : ""}`}
@@ -29,19 +43,17 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       </Stack>
       <Stack>
         <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
+          <li onClick={sidebarHandler}>Home</li>
+          <li onClick={sidebarHandler}>
             <Link href="/#MyAbout">About me</Link>
           </li>
-          <li>
+          <li onClick={sidebarHandler}>
             <Link href="/#Portfolio">Portfolio</Link>
           </li>
-          <li>
+          <li onClick={sidebarHandler}>
             <Link href="/#Techstack">Tech Stack</Link>
           </li>
-          <li>
+          <li onClick={sidebarHandler}>
             <a
               target="_blank"
               rel="noreferrer"
@@ -50,12 +62,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               Github profile
             </a>
           </li>
-          <li>
-            <a
-              href="https://wa.me/+918460344278"
-              target="_blank"
-              rel="noreferrer"
-            >
+          <li onClick={sidebarHandler}>
+            <a href="#contact" rel="noreferrer">
               Contacts
             </a>
           </li>

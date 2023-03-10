@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
 
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+
   return (
     <>
       <div className={styles.container}>
