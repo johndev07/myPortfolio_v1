@@ -45,10 +45,12 @@ const Aboutme = () => {
                 <b>From:</b> Surat Gujarat
               </li>
             </ul>
-            <button data-aos="fade-up">
-              <FaCloudDownloadAlt />
-              Download Resume
-            </button>
+            <a href="/resume/alwyn_john_resume.pdf" target="_blank">
+              <button data-aos="fade-up">
+                <FaCloudDownloadAlt />
+                Download Resume
+              </button>
+            </a>
           </Stack>
         </Stack>
       </Stack>
