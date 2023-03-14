@@ -92,15 +92,23 @@
   color: #fff;
 }
 
-.contactForm input[type="submit"] {
+.contactForm button[type="submit"] {
   width: 80px;
   border: none;
+  cursor: pointer;
+  background-color: #00ffff;
+  color: #000;
+  padding: 12px 25px;
 }
 
 .contactForm textarea {
   padding: 7px;
   background-color: #ffffff2e;
   color: #fff;
+}
+
+.contactForm p {
+  color: #00ffff;
 }
 
 .contactCanvas {
