@@ -10,6 +10,7 @@ const Mainintro = ({ setIsOpen }) => {
   useEffect(() => {
     if (z === 1) {
       let wordTag = document.querySelector("#wordtype");
+      console.log(wordTag);
       let wordstart = wordCarousel(wordTag);
       z++;
     }
