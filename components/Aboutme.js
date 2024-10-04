@@ -18,10 +18,10 @@ const Aboutme = () => {
               Hii I&apos;m <span>Alwyn john samuel</span>, a Web Developer
             </h3>
             <p data-aos="fade-up">
-              I'm a passionate React developer with over 2.7 years of experience
-              creating dynamic and responsive web applications. My journey began
-              with a fascination for front-end development, and I've since honed
-              my skills in React, Next.js, and Three.js
+              I&apos;m a passionate React developer with over 2.7 years of
+              experience creating dynamic and responsive web applications. My
+              journey began with a fascination for front-end development, and
+              I&apos;ve since honed my skills in React, Next.js, and Three.js
             </p>
             <p data-aos="fade-up">
               I thrive on building intuitive user experiences and enjoy

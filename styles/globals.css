@@ -15,6 +15,7 @@ body {
   position: relative;
   scroll-behavior: smooth;
   background-color: #111418;
+  overflow-x: hidden;
 }
 
 a {
