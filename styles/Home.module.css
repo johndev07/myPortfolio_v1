@@ -6,17 +6,10 @@
 .sectionList {
   flex: 9;
   min-height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
   perspective: 10px;
-  scroll-snap-type: y proximity;
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
-}
-
-.sectionList > div {
-  scroll-snap-align: start;
 }
 
 .cursorarea {

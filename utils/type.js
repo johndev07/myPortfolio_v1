@@ -1,4 +1,8 @@
-let wordList = ["Alwyn john", "a web developer", "a designer"];
+let wordList = [
+  "A creative web developer",
+  "With a passion for both functionality and aesthetics",
+  "a designer",
+];
 
 function wait(ms) {
   return new Promise((resolve) =>

@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import styles from "../styles/Contact.module.css";
 import EarthCanvas from "./canvas/EarthCanvas";
 import StarCanvas from "./canvas/StarCanvas";
-
 import { useForm, ValidationError } from "@formspree/react";
 const Contact = () => {
   const [state, handleSubmit] = useForm("xyyvnwoa");

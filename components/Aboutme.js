@@ -15,19 +15,20 @@ const Aboutme = () => {
         <Stack direction={isSmallScreen ? "column" : "row"}>
           <Stack className={styles.aboutmePara}>
             <h3 data-aos="fade-left">
-              I&apos;m <span>Alwyn john samuel</span>, a Web Developer
+              Hii I&apos;m <span>Alwyn john samuel</span>, a Web Developer
             </h3>
             <p data-aos="fade-up">
-              I help you build brand for your business at an affordable price.
-              Thousands of clients have procured exceptional results while
-              working with our dedicated team. when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.
+              I'm a passionate React developer with over 2.7 years of experience
+              creating dynamic and responsive web applications. My journey began
+              with a fascination for front-end development, and I've since honed
+              my skills in React, Next.js, and Three.js
             </p>
             <p data-aos="fade-up">
-              Delivering work within time and budget which meets client &apos;s
-              requirements is our moto. Lorem Ipsum has been the industry
-              &apos;s standard dummy text ever when an unknown printer took a
-              galley.
+              I thrive on building intuitive user experiences and enjoy
+              leveraging the power of Next.js for server-side rendering and
+              seamless routing. My experience with Three.js has allowed me to
+              explore the exciting realm of 3D graphics, adding an innovative
+              touch to my projects.
             </p>
           </Stack>
           <Stack className={styles.aboutList}>
@@ -61,7 +62,7 @@ const Aboutme = () => {
       >
         <div data-aos="fade-up">
           <span>
-            <CountUp start={0} end={1} duration={2} suffix=" +" />
+            <CountUp start={0} end={2.7} duration={2} suffix=" +" />
           </span>
           <h3>Year of Experience</h3>
         </div>

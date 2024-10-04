@@ -4,6 +4,7 @@
   min-height: 100vh;
   position: relative;
   background: linear-gradient(#212529, #000);
+  position: relative;
 }
 
 .heading {
