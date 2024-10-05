@@ -6,10 +6,22 @@ export let cards = [
     visit: "https://lucky-conkies-2f26aa.netlify.app/",
   },
   {
-    imgUrl: "/images/react/react-lyrics.jpg",
-    title: "Lyrics App",
+    imgUrl: "/images/react/angelous_homecare.jpg",
+    title: "Angelus Homecare",
     category: "react",
-    visit: "https://frabjous-sprinkles-5a5d07.netlify.app/",
+    visit: "https://angelus-homecare.co.uk/",
+  },
+  {
+    imgUrl: "/images/react/grand_pms.jpg",
+    title: "Grand PMS",
+    category: "react",
+    visit: "https://grandpms-wos.web.app/",
+  },
+  {
+    imgUrl: "/images/react/wos.jpg",
+    title: "WOS",
+    category: "react",
+    visit: "https://wos-testing.web.app/",
   },
   {
     imgUrl: "/images/react/react-wesite.jpg",
